@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(#cc6666, #ff9966 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.nav-wrapper{
+    background-color:#e96767;
+}
+
+.image-one{
+    height:40vh;
+}
+.brand-logo{
+    margin-left: 4vh;
+}
+.carouselSize{
+    height:100%;
+    margin-bottom:30px;
+}
+
+.carousel-item{
+    transform: scale(1.3);
+}
+
+/* #wrapperInstagram{
+    height:50vh;
+} */
+
+/* .image-one{
+    background-image:url("images/pexelsGalaxyPicture.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+} */
