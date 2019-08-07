@@ -5,7 +5,7 @@ $(document).ready(function () {
   //add with instagram api call items to carousel that are images from insta
   // $('.carousel-item')
 
-  $("#submit").click(function (e) {
+  // $("#submit").click(function (e) {
     let code = "9ac583e08079458982c402f7f7af5f85";
     let err = null;
     let client = "107588feb28a41fd827dfe7f4513f9b1";
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
   });
-});
+// });
 
 //Need to add a favicon.ico
 //Need to add Jquery initialization

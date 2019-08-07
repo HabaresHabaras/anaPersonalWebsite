@@ -12,6 +12,11 @@ body{
 .image-one{
     height:40vh;
 }
+.footer{
+    margin-top:5vh;
+    padding-top:5vh;
+    background-color:white;
+}
 .brand-logo{
     margin-left: 4vh;
 }
@@ -22,6 +27,12 @@ body{
     height:40vh;
     margin-bottom:30px;
 }
+@media screen and (max-width: 300px) {
+    .slider {
+      height: 300px;;
+    }
+  }
+  
 
 /* .carousel-item{
      transform: scale(1.3); 
