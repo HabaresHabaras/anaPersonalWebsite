@@ -1,8 +1,49 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.slider').slider();
-    $('.carousel').carousel();
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+  $('.slider').slider();
+  $('.carousel').carousel();
+
+
+  //add with instagram api call items to carousel that are images from insta
+  // $('.carousel-item')
+
+  $("#submit").click(function (e) {
+    let code = "9ac583e08079458982c402f7f7af5f85";
+    let err = null;
+    let client = "107588feb28a41fd827dfe7f4513f9b1";
+    let secret = "6b608b3a5232423e8ed041d9e07671ee ";
+    let token = "17684442267.1677ed0.e42d3d64b2054a18a382c5e596946f87";
+    if (err === null) {
+      $.ajax({
+        type: "GET",
+        // url: "https://api.instagram.com/v1/users/self/?access_token="+token,
+        url: "https://api.instagram.com/v1/users/self/media/recent/?access_token="+token,
+        dataType: "json",
+        success: function(results, status, xhr){
+          console.log(results);
+
+          // loop thru results.data[i] to get all data and display inside the 
+          // carousel at the loading of the page 
+          
+
+
+          $("#instaPicture").append("<a href='"+results.data[0].images.standard_resolution.url+"'><img src='"+results.data[0].images.standard_resolution.url+"'></a>");
+          // $("#instaPicture").append("<a href='"+results.data.profile_picture+"'><img src='"+results.data.profile_picture+"'></a>");
+        }
+        // client_id: client,
+        // client_secret: secret,
+        // grant_type: "authorization_code",
+        // redirect_uri: "localhost:5500",
+        // code: "9ac583e08079458982c402f7f7af5f85"
+        // success: function(results, status, xhr){
+        // }
+      }
+      )
+
+    }
+
   });
+});
 
 //Need to add a favicon.ico
 //Need to add Jquery initialization
