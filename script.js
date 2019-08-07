@@ -1,8 +1,6 @@
 $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.slider').slider();
-  $('.carousel').carousel();
-
 
   //add with instagram api call items to carousel that are images from insta
   // $('.carousel-item')
@@ -17,18 +15,19 @@ $(document).ready(function () {
       $.ajax({
         type: "GET",
         // url: "https://api.instagram.com/v1/users/self/?access_token="+token,
-        url: "https://api.instagram.com/v1/users/self/media/recent/?access_token="+token,
+        url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + token,
         dataType: "json",
-        success: function(results, status, xhr){
+        success: function (results, status, xhr) {
           console.log(results);
 
           // loop thru results.data[i] to get all data and display inside the 
           // carousel at the loading of the page 
-          
-
-
-          $("#instaPicture").append("<a href='"+results.data[0].images.standard_resolution.url+"'><img src='"+results.data[0].images.standard_resolution.url+"'></a>");
-          // $("#instaPicture").append("<a href='"+results.data.profile_picture+"'><img src='"+results.data.profile_picture+"'></a>");
+          for (i = 0; i < results.data.length;i++) {
+            $("#carouselOne").append("<a class='carousel-item' href='" + results.data[i].images.standard_resolution.url + "'><img src='" + results.data[i].images.standard_resolution.url + "'></a>");
+            // $("#instaPicture").append("<a href='"+results.data.profile_picture+"'><img src='"+results.data.profile_picture+"'></a>");
+          console.log("appended");
+          $('.carousel').carousel();
+          }
         }
         // client_id: client,
         // client_secret: secret,
