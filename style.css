@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#cc6666, #ff9966 );
+    background: linear-gradient(#ffc4c4, #e0dddb );
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
@@ -20,8 +20,11 @@ body{
 .brand-logo{
     margin-left: 4vh;
 }
+/* .carousel .carousel-item{
+    width:300px !important;
+} */
 .carousel{
-    z-index:2;
+    min-height:500px !important;
 }
 .carouselSize{
     height:40vh;

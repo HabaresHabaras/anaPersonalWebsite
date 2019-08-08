@@ -2,10 +2,12 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.slider').slider();
 
+  carouselStart();
   //add with instagram api call items to carousel that are images from insta
   // $('.carousel-item')
 
   // $("#submit").click(function (e) {
+  function carouselStart() {
     let code = "9ac583e08079458982c402f7f7af5f85";
     let err = null;
     let client = "107588feb28a41fd827dfe7f4513f9b1";
@@ -22,13 +24,14 @@ $(document).ready(function () {
 
           // loop thru results.data[i] to get all data and display inside the 
           // carousel at the loading of the page 
-          for (i = 0; i < results.data.length;i++) {
+          for (i = 0; i < results.data.length; i++) {
             $("#carouselOne").append("<a class='carousel-item' href='" + results.data[i].images.standard_resolution.url + "'><img src='" + results.data[i].images.standard_resolution.url + "'></a>");
             // $("#instaPicture").append("<a href='"+results.data.profile_picture+"'><img src='"+results.data.profile_picture+"'></a>");
-          console.log("appended");
-          $('.carousel').carousel();
+            console.log("appended");
+            $('.carousel').carousel();
           }
         }
+      }
         // client_id: client,
         // client_secret: secret,
         // grant_type: "authorization_code",
