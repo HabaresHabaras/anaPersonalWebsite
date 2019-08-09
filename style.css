@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(#ffc4c4, #e0dddb );
     background-repeat: no-repeat;
@@ -30,12 +34,44 @@ body{
     height:40vh;
     margin-bottom:30px;
 }
-@media screen and (max-width: 300px) {
-    .slider {
-      height: 300px;;
+@media screen and (max-width: 600px) {
+    .carouselComputer {
+      display:none;
     }
   }
   
+@media screen and (min-width: 600px){
+    .carousel .carousel-item{
+        display:none;
+    }
+    .carouselComputer{
+        display:show;
+    }
+}
+.carouselComputer{
+    padding-top:25vh;
+}
+.carousel-thing{
+    width: 25%;
+		list-style-type: none;
+		position: absolute;
+		top: 0;
+		/* padding: 20px; */
+		/* height: 200px;  */
+		opacity: 0;
+		margin-top: 80vh;
+		text-align: center;
+		transition: 1s opacity; 
+}
+.active {
+    opacity: 1;
+}
+.carouselLi{
+    list-style-type: none;
+}
+.deskInstaImg{
+    height:20vh;
+}
 
 /* .carousel-item{
      transform: scale(1.3); 
