@@ -52,6 +52,12 @@ body {
     .cardDisappear {
         display: none;
     }
+    .fixed-action-btn {
+        right: 10vh !important;
+        top: 50vh !important;
+        padding: 0 !important;
+    
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -61,6 +67,12 @@ body {
 
     .carouselComputer {
         display: show;
+    }
+    .fixed-action-btn {
+        right: 20vh !important;
+        top: 30vh !important;
+        padding: 0 !important;
+    
     }
 }
 
@@ -90,13 +102,6 @@ body {
 } */
 .deskInstaImg {
     height: 20vh;
-}
-
-.fixed-action-btn {
-    right: 20vh !important;
-    top: 30vh !important;
-    padding: 0 !important;
-
 }
 
 /* .carousel-item{
