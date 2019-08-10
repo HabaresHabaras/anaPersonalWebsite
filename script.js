@@ -50,7 +50,7 @@ $(document).ready(function () {
   var timer = 4000;
 
 var i = 0;
-var max = 18;
+var max = 24;
 // $('#carousel-computer > a').length;
  
 	$("#carousel-computer > a").eq(i).addClass('active').css('left','0');
