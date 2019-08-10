@@ -2,31 +2,38 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(#ffc4c4, #e0dddb );
+body {
+    background: linear-gradient(#ffc4c4, #e0dddb);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
+    font-family: 'Bree Serif', serif;
 }
 
-.nav-wrapper{
-    background-color:#e96767;
+.card-title {
+    background-color: #e96767;
+    padding: .7vh !important;
 }
 
-.image-one{
-    height:40vh;
+.nav-wrapper {
+    background-color: #e96767;
 }
-.footer{
-    margin-top:5vh;
-    padding-top:5vh;
-    background-color:white;
+
+.image-one {
+    height: 40vh;
 }
-.brand-logo{
+
+.footer {
+    margin-top: 5vh;
+    padding-top: 5vh;
+    background-color: white;
+}
+
+.brand-logo {
     margin-left: 4vh;
 }
-#carouselPhone{
-    
-}
+
+
 /* .carousel .carousel-item{
     width:300px !important;
 } */
@@ -38,45 +45,58 @@ body{
     margin-bottom:30px;
 } */
 @media screen and (max-width: 700px) {
-    .carouselComputer{
-      display:none;
+    .carouselComputer {
+        display: none;
     }
-    .cardDisappear{
-        display:none;
-    }
-  }
-  
-@media screen and (min-width: 700px){
-    .carousel .carousel-item{
-        display:none;
-    }
-    .carouselComputer{
-        display:show;
+
+    .cardDisappear {
+        display: none;
     }
 }
-.carouselComputer{
-    margin-top:25vh;
+
+@media screen and (min-width: 700px) {
+    .carousel .carousel-item {
+        display: none;
+    }
+
+    .carouselComputer {
+        display: show;
+    }
 }
-.carousel-thing{
+
+.carouselComputer {
+    margin-top: 25vh;
+}
+
+.carousel-thing {
     width: 25%;
-		/* list-style-type: none; */
-		position: absolute;
-		top: 0;
-		/* padding: 20px; */
-		/* height: 200px;  */
-		opacity: 0;
-		margin-top: 70vh;
-		text-align: center;
-		transition: 1s opacity; 
+    /* list-style-type: none; */
+    position: absolute;
+    top: 0;
+    /* padding: 20px; */
+    /* height: 200px;  */
+    opacity: 0;
+    margin-top: 70vh;
+    text-align: center;
+    transition: 1s opacity;
 }
+
 .active {
     opacity: 1;
 }
+
 /* .carouselLi{
     list-style-type: none;
 } */
-.deskInstaImg{
-    height:20vh;
+.deskInstaImg {
+    height: 20vh;
+}
+
+.fixed-action-btn {
+    right: 20vh !important;
+    top: 30vh !important;
+    padding: 0 !important;
+
 }
 
 /* .carousel-item{

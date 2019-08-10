@@ -1,8 +1,10 @@
 $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.slider').slider();
-
-  //add with instagram api call items to carousel that are images from insta
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems, {
+    direction: 'left'
+  });  //add with instagram api call items to carousel that are images from insta
   // $('.carousel-item')
 
   // $("#submit").click(function (e) {
@@ -26,7 +28,7 @@ $(document).ready(function () {
           $("#carouselPhone").append("<a class='carousel-item' href='" + results.data[i].images.standard_resolution.url + "'><img src='" + results.data[i].images.standard_resolution.url + "'></a>");
           // $("#instaPicture").append("<a href='"+results.data.profile_picture+"'><img src='"+results.data.profile_picture+"'></a>");
           console.log("appended");
-          $("#carousel-computer").append("<a class='carousel-thing' href='"+results.data[i].images.standard_resolution.url + "'><img class='deskInstaImg'src='" +results.data[i].images.standard_resolution.url+"'></a></li");
+          $("#carousel-computer").append("<a class='carousel-thing' href='" + results.data[i].images.standard_resolution.url + "'><img class='deskInstaImg'src='" + results.data[i].images.standard_resolution.url + "'></a></li");
           $('.carousel').carousel();
         }
       }
@@ -49,45 +51,45 @@ $(document).ready(function () {
 
   var timer = 4000;
 
-var i = 0;
-var max = 24;
-// $('#carousel-computer > a').length;
- 
-	$("#carousel-computer > a").eq(i).addClass('active').css('left','0');
-	$("#carousel-computer > a").eq(i + 1).addClass('active').css('left','15%');
-	$("#carousel-computer > a").eq(i + 2).addClass('active').css('left','30%');
-	$("#carousel-computer > a").eq(i + 3).addClass('active').css('left','45%');
-  $("#carousel-computer > a").eq(i + 4).addClass('active').css('left','60%');
-	$("#carousel-computer > a").eq(i + 5).addClass('active').css('left','75%');
+  var i = 0;
+  var max = 24;
+  // $('#carousel-computer > a').length;
 
-	setInterval(function(){ 
+  $("#carousel-computer > a").eq(i).addClass('active').css('left', '0');
+  $("#carousel-computer > a").eq(i + 1).addClass('active').css('left', '15%');
+  $("#carousel-computer > a").eq(i + 2).addClass('active').css('left', '30%');
+  $("#carousel-computer > a").eq(i + 3).addClass('active').css('left', '45%');
+  $("#carousel-computer > a").eq(i + 4).addClass('active').css('left', '60%');
+  $("#carousel-computer > a").eq(i + 5).addClass('active').css('left', '75%');
 
-		$("#carousel-computer > a").removeClass('active');
+  setInterval(function () {
 
-		$("#carousel-computer > a").eq(i).css('transition-delay','0.20s');
-		$("#carousel-computer > a").eq(i + 1).css('transition-delay','0.40s');
-		$("#carousel-computer > a").eq(i + 2).css('transition-delay','0.60s');
-		$("#carousel-computer > a").eq(i + 3).css('transition-delay','0.80s');
-		$("#carousel-computer > a").eq(i + 4).css('transition-delay','1s');
-		$("#carousel-computer > a").eq(i + 5).css('transition-delay','1.20s');
+    $("#carousel-computer > a").removeClass('active');
 
-		if (i < max-6) {
-			i = i+6; 
-		}
+    $("#carousel-computer > a").eq(i).css('transition-delay', '0.20s');
+    $("#carousel-computer > a").eq(i + 1).css('transition-delay', '0.40s');
+    $("#carousel-computer > a").eq(i + 2).css('transition-delay', '0.60s');
+    $("#carousel-computer > a").eq(i + 3).css('transition-delay', '0.80s');
+    $("#carousel-computer > a").eq(i + 4).css('transition-delay', '1s');
+    $("#carousel-computer > a").eq(i + 5).css('transition-delay', '1.20s');
 
-		else { 
-			i = 0; 
-		}  
+    if (i < max - 6) {
+      i = i + 6;
+    }
 
-		$("#carousel-computer > a").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
-		$("#carousel-computer > a").eq(i + 1).css('left','15%').addClass('active').css('transition-delay','1.5s');
-		$("#carousel-computer > a").eq(i + 2).css('left','30%').addClass('active').css('transition-delay','1.75s');
-		$("#carousel-computer > a").eq(i + 3).css('left','45%').addClass('active').css('transition-delay','2s');
-    $("#carousel-computer > a").eq(i + 4).css('left','60%').addClass('active').css('transition-delay','2.25s');
-		$("#carousel-computer > a").eq(i + 5).css('left','75%').addClass('active').css('transition-delay','2.50s');
+    else {
+      i = 0;
+    }
 
-	}, timer);
- 
+    $("#carousel-computer > a").eq(i).css('left', '0').addClass('active').css('transition-delay', '1.25s');
+    $("#carousel-computer > a").eq(i + 1).css('left', '15%').addClass('active').css('transition-delay', '1.5s');
+    $("#carousel-computer > a").eq(i + 2).css('left', '30%').addClass('active').css('transition-delay', '1.75s');
+    $("#carousel-computer > a").eq(i + 3).css('left', '45%').addClass('active').css('transition-delay', '2s');
+    $("#carousel-computer > a").eq(i + 4).css('left', '60%').addClass('active').css('transition-delay', '2.25s');
+    $("#carousel-computer > a").eq(i + 5).css('left', '75%').addClass('active').css('transition-delay', '2.50s');
+
+  }, timer);
+
 });
 // });
 
