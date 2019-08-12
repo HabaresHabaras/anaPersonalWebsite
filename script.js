@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.slider').slider();
+  $('.parallax').parallax();
+
   var elems = document.querySelectorAll('.fixed-action-btn');
   var instances = M.FloatingActionButton.init(elems, {
     direction: 'left'

@@ -19,6 +19,9 @@ body {
     background-color: #e96767;
 }
 
+.activated{
+    background-color: #a04141;
+}
 .image-one {
     height: 40vh;
 }
@@ -26,7 +29,7 @@ body {
 .footer {
     margin-top: 5vh;
     padding-top: 5vh;
-    background-color: white;
+    background-color: #e96767;
 }
 
 .brand-logo {
