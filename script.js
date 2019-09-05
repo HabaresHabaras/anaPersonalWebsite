@@ -47,10 +47,11 @@ $(document).ready(function () {
     }
     )
 
+    pcCarouselStart();
   }
 
 
-
+function pcCarouselStart(){
   var timer = 4000;
 
   var i = 0;
@@ -91,8 +92,9 @@ $(document).ready(function () {
     $("#carousel-computer > a").eq(i + 5).css('left', '75%').addClass('active').css('transition-delay', '2.50s');
 
   }, timer);
-
+}
 });
+
 // });
 
 //Need to add a favicon.ico

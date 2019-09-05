@@ -10,6 +10,21 @@ body {
     font-family: 'Bree Serif', serif;
 }
 
+.brand-logo {
+    color: #cdedff  !important;
+}
+.showcasePress{
+    height:auto;
+    /* overflow:hidden; */
+}
+.quote{
+    text-align: center;
+    font-size:10vh;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 .card-title {
     background-color: #e96767;
     padding: .7vh !important;
@@ -19,9 +34,10 @@ body {
     background-color: #e96767;
 }
 
-.activated{
+.activated {
     background-color: #a04141;
 }
+
 .image-one {
     height: 40vh;
 }
@@ -55,11 +71,12 @@ body {
     .cardDisappear {
         display: none;
     }
+
     .fixed-action-btn {
         right: 10vh !important;
         top: 50vh !important;
         padding: 0 !important;
-    
+
     }
 }
 
@@ -71,11 +88,12 @@ body {
     .carouselComputer {
         display: show;
     }
+
     .fixed-action-btn {
         right: 20vh !important;
         top: 30vh !important;
         padding: 0 !important;
-    
+
     }
 }
 
