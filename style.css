@@ -74,7 +74,10 @@ body {
     .cardDisappear {
         display: none;
     }
-
+    .showHalf{
+        height:900vh;
+        overflow:hidden;
+    }
     .fixed-action-btn {
         right: 10vh !important;
         top: 50vh !important;
