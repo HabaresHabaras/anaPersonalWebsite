@@ -74,7 +74,9 @@ body {
     .carouselComputer {
         display: none;
     }
-
+    .contactTitle{
+        margin-right:20vh;
+    }
     .cardDisappear {
         display: none;
     }
@@ -94,7 +96,6 @@ body {
     .carousel .carousel-item {
         display: none;
     }
-
     .carouselComputer {
         display: show;
     }
@@ -107,10 +108,12 @@ body {
     }
 }
 
+/* .contactTitle{
+    margin-left:90vh;
+} */
 .carouselComputer {
     margin-top: 25vh;
 }
-
 .carousel-thing {
     width: 25%;
     /* list-style-type: none; */
