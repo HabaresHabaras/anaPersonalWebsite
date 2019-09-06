@@ -2,7 +2,6 @@ $(document).ready(function () {
   $('.sidenav').sidenav();
   $('.slider').slider();
   $('.parallax').parallax();
-
   var elems = document.querySelectorAll('.fixed-action-btn');
   var instances = M.FloatingActionButton.init(elems, {
     direction: 'left'
@@ -51,50 +50,53 @@ $(document).ready(function () {
   }
 
 
-function pcCarouselStart(){
-  var timer = 4000;
+  function pcCarouselStart() {
+    var timer = 4000;
 
-  var i = 0;
-  var max = 24;
-  // $('#carousel-computer > a').length;
+    var i = 0;
+    var max = 24;
+    // $('#carousel-computer > a').length;
 
-  $("#carousel-computer > a").eq(i).addClass('active').css('left', '0');
-  $("#carousel-computer > a").eq(i + 1).addClass('active').css('left', '15%');
-  $("#carousel-computer > a").eq(i + 2).addClass('active').css('left', '30%');
-  $("#carousel-computer > a").eq(i + 3).addClass('active').css('left', '45%');
-  $("#carousel-computer > a").eq(i + 4).addClass('active').css('left', '60%');
-  $("#carousel-computer > a").eq(i + 5).addClass('active').css('left', '75%');
+    $("#carousel-computer > a").eq(i).addClass('active').css('left', '0');
+    $("#carousel-computer > a").eq(i + 1).addClass('active').css('left', '15%');
+    $("#carousel-computer > a").eq(i + 2).addClass('active').css('left', '30%');
+    $("#carousel-computer > a").eq(i + 3).addClass('active').css('left', '45%');
+    $("#carousel-computer > a").eq(i + 4).addClass('active').css('left', '60%');
+    $("#carousel-computer > a").eq(i + 5).addClass('active').css('left', '75%');
 
-  setInterval(function () {
+    setInterval(function () {
 
-    $("#carousel-computer > a").removeClass('active');
+      $("#carousel-computer > a").removeClass('active');
 
-    $("#carousel-computer > a").eq(i).css('transition-delay', '0.20s');
-    $("#carousel-computer > a").eq(i + 1).css('transition-delay', '0.40s');
-    $("#carousel-computer > a").eq(i + 2).css('transition-delay', '0.60s');
-    $("#carousel-computer > a").eq(i + 3).css('transition-delay', '0.80s');
-    $("#carousel-computer > a").eq(i + 4).css('transition-delay', '1s');
-    $("#carousel-computer > a").eq(i + 5).css('transition-delay', '1.20s');
+      $("#carousel-computer > a").eq(i).css('transition-delay', '0.20s');
+      $("#carousel-computer > a").eq(i + 1).css('transition-delay', '0.40s');
+      $("#carousel-computer > a").eq(i + 2).css('transition-delay', '0.60s');
+      $("#carousel-computer > a").eq(i + 3).css('transition-delay', '0.80s');
+      $("#carousel-computer > a").eq(i + 4).css('transition-delay', '1s');
+      $("#carousel-computer > a").eq(i + 5).css('transition-delay', '1.20s');
 
-    if (i < max - 6) {
-      i = i + 6;
-    }
+      if (i < max - 6) {
+        i = i + 6;
+      }
 
-    else {
-      i = 0;
-    }
+      else {
+        i = 0;
+      }
 
-    $("#carousel-computer > a").eq(i).css('left', '0').addClass('active').css('transition-delay', '1.25s');
-    $("#carousel-computer > a").eq(i + 1).css('left', '15%').addClass('active').css('transition-delay', '1.5s');
-    $("#carousel-computer > a").eq(i + 2).css('left', '30%').addClass('active').css('transition-delay', '1.75s');
-    $("#carousel-computer > a").eq(i + 3).css('left', '45%').addClass('active').css('transition-delay', '2s');
-    $("#carousel-computer > a").eq(i + 4).css('left', '60%').addClass('active').css('transition-delay', '2.25s');
-    $("#carousel-computer > a").eq(i + 5).css('left', '75%').addClass('active').css('transition-delay', '2.50s');
+      $("#carousel-computer > a").eq(i).css('left', '0').addClass('active').css('transition-delay', '1.25s');
+      $("#carousel-computer > a").eq(i + 1).css('left', '15%').addClass('active').css('transition-delay', '1.5s');
+      $("#carousel-computer > a").eq(i + 2).css('left', '30%').addClass('active').css('transition-delay', '1.75s');
+      $("#carousel-computer > a").eq(i + 3).css('left', '45%').addClass('active').css('transition-delay', '2s');
+      $("#carousel-computer > a").eq(i + 4).css('left', '60%').addClass('active').css('transition-delay', '2.25s');
+      $("#carousel-computer > a").eq(i + 5).css('left', '75%').addClass('active').css('transition-delay', '2.50s');
 
-  }, timer);
-}
+    }, timer);
+  }
+  $(".btnClick").on("click", function showMorePage() {
+    var content = $(".showcasePress");
+    content.toggleClass("showHalf", "showAll", 400);
+  })
 });
-
 // });
 
 //Need to add a favicon.ico

@@ -13,16 +13,19 @@ body {
 .brand-logo {
     color: #cdedff  !important;
 }
-.showcasePress{
+.showAll{
     height:auto;
-    /* overflow:hidden; */
+}
+.showHalf{
+    height:632vh;
+    overflow:hidden;
 }
 .quote{
     text-align: center;
     font-size:10vh;
     color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: grey;
 }
 
 .card-title {
