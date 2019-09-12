@@ -19,6 +19,7 @@ body {
 .keywordButton{
     margin-top:1vh;
     margin-left:1vh;
+    font-size:1.8vh !important;
 }
 .brand-logo {
     color: #cdedff !important;
