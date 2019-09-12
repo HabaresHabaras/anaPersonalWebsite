@@ -26,7 +26,7 @@ $(function () {
     var currentBot = "anabot";
 
     //Respuestas personalizadas
-    var keywordObrasCard = "<div class='row'> <div class='col offset-m1 offset-s1 m11 s11'><a class='purple lighten-3 btn keywordButton'>Que obras hay</a><a class='purple lighten-3 btn keywordButton'>Comprar tickets</a><a class='purple lighten-3 btn keywordButton'>Parque Lezama</a><a class='purple lighten-3 btn keywordButton'>Proyectos</a><a class='purple lighten-3 btn keywordButton'>Button</a><a class='purple lighten-3 btn keywordButton'>Button</a></div></div>'";
+    var keywordObrasCard = "<div class='row'> <div class='col offset-m1 m11 s11'><a class='purple lighten-3 btn keywordButton'>Que obras hay</a><a class='purple lighten-3 btn keywordButton'>Button</a><a class='purple lighten-3 btn keywordButton'>Comprar tickets</a><a class='purple lighten-3 btn keywordButton'>Button</a><a class='purple lighten-3 btn keywordButton'>Parque Lezama</a><a class='purple lighten-3 btn keywordButton'>Proyectos</a></div></div>'";
     function defaultSettings() {
         var creature;
         if (currentBot == "anabot") {
