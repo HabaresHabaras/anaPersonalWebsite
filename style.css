@@ -107,7 +107,7 @@ body {
     background-color: #536dfe;
     font-size: 20px;
     color: white;
-    margin-top: 3vh;
+    margin-top: 1.5vh;
     padding-left: 3vh;
     margin-right: 3vh;
     border-radius: 10px;
@@ -117,7 +117,7 @@ body {
     background-color: #ff9800;
     font-size: 20px;
     color: white;
-    margin-top: 3vh;
+    margin-top: 1.5vh;
     margin-left: 5vh;
     padding-left: 2vh;
     border-radius: 10px;
@@ -148,14 +148,14 @@ body {
 
     .botResCard {
         font-size:15px;
-        margin-top: 1vh;
-        padding-left: 1vh;
-        margin-right: 1vh;
+        margin-top: .5vh;
+        padding-left: 0;
+        margin-right: 0;
         border-radius: 5px;
     }
     .uiCard{
         font-size:15px;
-        margin-top: 1vh;
+        margin-top: .5vh;
         padding-left: 1vh;
         margin-right: 1vh;
         border-radius: 5px;
