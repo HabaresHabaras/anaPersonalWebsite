@@ -3,16 +3,19 @@
 }
 
 body {
-    background: linear-gradient(#ffc4c4, #e0dddb);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     font-family: 'Bree Serif', serif;
 }
 
-.blueBody{
-    background:linear-gradient(#e0f7fa, #4fc3f7) !important;
+.blueBody {
+    background: linear-gradient(#e0f7fa, #4fc3f7) !important;
 }
+.redBody {
+    background: linear-gradient(#ffc4c4, #e0dddb);
+}
+
 .brand-logo {
     color: #cdedff !important;
 }
@@ -43,12 +46,14 @@ body {
     background-color: #e96767;
 }
 
-.navBlue{
-    background-color:#40b3bb;
+.navBlue {
+    background-color: #40b3bb;
 }
-.activatedBlue{
-    background-color:#34aca2;
+
+.activatedBlue {
+    background-color: #34aca2;
 }
+
 .activated {
     background-color: #a04141;
 }
@@ -57,16 +62,18 @@ body {
     height: 40vh;
 }
 
-.footer{
+.footer {
     margin-top: 5vh;
     padding-top: 5vh;
     background-color: #e96767;
 }
-.footerBlue{
+
+.footerBlue {
     margin-top: 5vh;
     padding-top: 5vh;
     background-color: #34aca2;
 }
+
 .brand-logo {
     margin-left: 4vh;
 }
@@ -97,7 +104,7 @@ body {
     color: white;
     margin-top: 3vh;
     padding-left: 3vh;
-    margin-right:3vh;
+    margin-right: 3vh;
     border-radius: 10px;
 }
 
@@ -107,7 +114,7 @@ body {
     color: white;
     margin-top: 3vh;
     margin-left: 5vh;
-    padding-left:2vh;
+    padding-left: 2vh;
     border-radius: 10px;
 }
 
@@ -134,9 +141,6 @@ body {
         display: none;
     }
 
-    .blueBody{
-        background:linear-gradient(#e0f7fa, #4fc3f7) !important;
-    }
     .showHalf {
         height: 1350vh;
         overflow: hidden;
@@ -160,7 +164,8 @@ body {
         height: 53vh;
         overflow-y: hidden;
     }
-    .gifStyles{
+
+    .gifStyles {
         width: 25vh !important;
         height: 25vh !important;
     }
