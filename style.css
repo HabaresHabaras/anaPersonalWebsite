@@ -146,6 +146,18 @@ body {
         display: none;
     }
 
+    .botResCard {
+        font-size:15px;
+    }
+    .uiCard{
+        font-size:15px;
+    }
+    .keywordButton{
+        margin-top:.5vh;
+        margin-left:.5vh;
+        font-size:1.7vh !important;
+    }
+
     .showHalf {
         height: 1350vh;
         overflow: hidden;
