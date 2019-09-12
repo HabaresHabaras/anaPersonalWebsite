@@ -148,9 +148,17 @@ body {
 
     .botResCard {
         font-size:15px;
+        margin-top: 1vh;
+        padding-left: 1vh;
+        margin-right: 1vh;
+        border-radius: 5px;
     }
     .uiCard{
         font-size:15px;
+        margin-top: 1vh;
+        padding-left: 1vh;
+        margin-right: 1vh;
+        border-radius: 5px;
     }
     .keywordButton{
         margin-top:.5vh;
