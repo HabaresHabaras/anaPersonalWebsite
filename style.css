@@ -60,6 +60,25 @@ body {
     margin-left:40%;
 }
 
+
+#chatBox{
+    position:relative;
+    height:65vh;
+    overflow-y: hidden;
+
+}
+#dinoCard{
+    height:35vh;
+    margin-top:4vh;
+    background-color:rgb(181, 213, 223);
+}
+.botResCard{
+    background-color:red;   
+    font-size:15px;
+    color: white;
+    margin-top:1vh;
+    margin-left:5vh;
+}
 /* .carousel .carousel-item{
     width:300px !important;
 } */

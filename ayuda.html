@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <i class="material-icons">chat</i>
+            </a>
+            <a data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">dehaze</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="obras.html">Teatro</a>
+                </li>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="activated">
+                    <a href="ayuda.html">Ayuda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="obras.html">Teatro</a>
+        </li>
+        <li>
+            <a href="proyectos.html">Proyectos</a>
+        </li>
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+        <li class="activated">
+            <a href="ayuda.html">Ayuda</a>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col m7 s7" id="chatBox">
+                <!--Here's where the alerts and cards for the messages will be appended  -->
+            </div>
+
+            <div class="card col m5 s4" id="dinoCard">
+            </div>
+        </div>
+
+        <form class="container create-form" id="formInput">
+            <div class="row justify-content-center">
+                <div class="input-field form-group col-lg-6 col-md-6 col-sm-6 col-9">
+                    <input type="text" id="ca" name="name">
+                    <button type="submit" class="btn blue">Tell bot</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+            </footer>
+            <script src="script.js"></script>
+            <script src="rivescript.js"></script>
+</body>
+
+</html>

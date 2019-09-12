@@ -1,0 +1,58 @@
+! version = 2.0
+! sub i'm = i am
+! sub hi = hello
+! sub hey = hello
+! sub wasup = hello
+! sub what's = what is
+! sub yeah = yes
+! sub yee = yes
+! sub thanks = thank you
+! sub nope = no
+! sub nah = no
+! sub who's = who is
+! sub that's = that is
+! sub don't = do not
+
+
+! person i am    = you are
+! person you are = i am
+! person i'm     = you're
+! person you're  = I'm
+! person my      = your
+! person your    = my
+! person you     = I
+! person i       = you
+
+! local concat = newline
+
+
+// haz api's pa pillar gifs cuando el usuario los pida
+// puede pillar uno o diez, y mas numeros
+// pilla otras cosas tambien
+
+! var name = Anabot
+
++ how have you been
+- I been good, just chilling
+- I've been, hbu?
+
++ * init 
+- Bot activated<set currentBot=<star>>
+
++ set #
+- <set num=<star>>
+
++ hello
+* <get currentBot> == anabot => Goodbye
+
++ how * your day
+* <get currentBot> == anabot => Do you really wanna know that?
+
+
++ give me extra access
+* <get name> == Cerveza => Hello creator, of course <set extraAccess=true>
+- Sorry, I can't give you clearance
+
++ bot change your mood
+* <get extraAccess> == true => What mood would you like me to have?
+- you don't have access to do that
