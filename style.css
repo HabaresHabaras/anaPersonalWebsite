@@ -143,6 +143,10 @@ body {
         height: 53vh;
         overflow-y: hidden;
     }
+    .gifStyles{
+        width: 25vh !important;
+        height: 25vh !important;
+    }
 }
 
 @media screen and (min-width: 700px) {

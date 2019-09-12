@@ -34,7 +34,7 @@ $(function () {
         } else if (currentBot == "octoElectrico") {
             creature = "octoElectricoPunos";
         }
-        var dinoCard = '<img src="images/' + creature + '.gif" class="card-image" alt="...">';
+        var dinoCard = '<img src="images/' + creature + '.gif" class="card-image gifStyles" alt="...">';
         $("#dinoCard").html("");
         $("#dinoCard").append(dinoCard);
     }
