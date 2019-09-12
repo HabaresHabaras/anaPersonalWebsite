@@ -146,9 +146,14 @@ body {
         display: none;
     }
 
+    #dinoCard {
+        height: 20vh !important;
+        padding-top:0;
+        background-color: #c8e6c9;
+    }
     .botResCard {
         font-size:15px;
-        margin-top: .5vh;
+        margin-top: .8vh;
         padding-left: .4vh;
         margin-right: .5vh;
         border-radius: 5px;
@@ -161,7 +166,7 @@ body {
         border-radius: 5px;
     }
     .keywordButton{
-        margin-top:.5vh;
+        margin-top:.8vh;
         margin-left:.5vh;
         font-size:1.7vh !important;
     }
@@ -191,8 +196,8 @@ body {
     }
 
     .gifStyles {
-        width: 25vh !important;
-        height: 25vh !important;
+        width: 21vh !important;
+        height: 21vh !important;
     }
 }
 
