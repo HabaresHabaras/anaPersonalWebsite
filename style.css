@@ -10,6 +10,9 @@ body {
     font-family: 'Bree Serif', serif;
 }
 
+.blueBody{
+    background:linear-gradient(#e0f7fa, #4fc3f7) !important;
+}
 .brand-logo {
     color: #cdedff !important;
 }
@@ -40,6 +43,12 @@ body {
     background-color: #e96767;
 }
 
+.navBlue{
+    background-color:#40b3bb;
+}
+.activatedBlue{
+    background-color:#34aca2;
+}
 .activated {
     background-color: #a04141;
 }
@@ -48,12 +57,16 @@ body {
     height: 40vh;
 }
 
-.footer {
+.footer{
     margin-top: 5vh;
     padding-top: 5vh;
     background-color: #e96767;
 }
-
+.footerBlue{
+    margin-top: 5vh;
+    padding-top: 5vh;
+    background-color: #34aca2;
+}
 .brand-logo {
     margin-left: 4vh;
 }
@@ -79,7 +92,7 @@ body {
 }
 
 .botResCard {
-    background-color: #ffcc80;
+    background-color: #536dfe;
     font-size: 20px;
     color: white;
     margin-top: 3vh;
@@ -88,7 +101,7 @@ body {
 }
 
 .uiCard {
-    background-color: #81d4fa;
+    background-color: #ff9800;
     font-size: 20px;
     color: white;
     margin-top: 3vh;
