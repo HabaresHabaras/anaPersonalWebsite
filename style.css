@@ -11,18 +11,21 @@ body {
 }
 
 .brand-logo {
-    color: #cdedff  !important;
+    color: #cdedff !important;
 }
-.showAll{
-    height:auto;
+
+.showAll {
+    height: auto;
 }
-.showHalf{
-    height:780vh;
-    overflow:hidden;
+
+.showHalf {
+    height: 780vh;
+    overflow: hidden;
 }
-.quote{
+
+.quote {
     text-align: center;
-    font-size:10vh;
+    font-size: 10vh;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: grey;
@@ -54,31 +57,46 @@ body {
 .brand-logo {
     margin-left: 4vh;
 }
-.btnClick{
-    margin-top:20vh;
-    margin-bottom:20vh;
-    margin-left:40%;
+
+.btnClick {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 40%;
 }
 
 
-#chatBox{
-    position:relative;
-    height:65vh;
+#chatBox {
+    position: relative;
+    height: 65vh;
     overflow-y: hidden;
 
 }
-#dinoCard{
-    height:35vh;
-    margin-top:4vh;
-    background-color:rgb(181, 213, 223);
+
+#dinoCard {
+    height: 35vh;
+    margin-top: 4vh;
+    background-color: #c8e6c9;
 }
-.botResCard{
-    background-color:red;   
-    font-size:15px;
+
+.botResCard {
+    background-color: #ffcc80;
+    font-size: 20px;
     color: white;
-    margin-top:1vh;
-    margin-left:5vh;
+    margin-top: 3vh;
+    padding-left: 3vh;
+    border-radius: 10px;
 }
+
+.uiCard {
+    background-color: #81d4fa;
+    font-size: 20px;
+    color: white;
+    margin-top: 3vh;
+    margin-left: 5vh;
+    padding-left:2vh;
+    border-radius: 10px;
+}
+
 /* .carousel .carousel-item{
     width:300px !important;
 } */
@@ -93,21 +111,37 @@ body {
     .carouselComputer {
         display: none;
     }
-    .contactTitle{
-        margin-right:10vh;
+
+    .contactTitle {
+        margin-right: 10vh;
     }
+
     .cardDisappear {
         display: none;
     }
-    .showHalf{
-        height:1350vh;
-        overflow:hidden;
+
+    .showHalf {
+        height: 1350vh;
+        overflow: hidden;
     }
+
     .fixed-action-btn {
         right: 10vh !important;
         top: 50vh !important;
         padding: 0 !important;
 
+    }
+
+    #dinoCard {
+        margin-top: 1vh;
+        height: 26vh;
+        margin: 1vh;
+    }
+
+    #chatBox {
+        position: relative;
+        height: 53vh;
+        overflow-y: hidden;
     }
 }
 
@@ -115,6 +149,7 @@ body {
     .carousel .carousel-item {
         display: none;
     }
+
     .carouselComputer {
         display: show;
     }
@@ -133,6 +168,7 @@ body {
 .carouselComputer {
     margin-top: 25vh;
 }
+
 .carousel-thing {
     width: 25%;
     /* list-style-type: none; */
