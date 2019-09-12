@@ -97,6 +97,7 @@ body {
     color: white;
     margin-top: 3vh;
     padding-left: 3vh;
+    margin-right:3vh;
     border-radius: 10px;
 }
 
@@ -133,6 +134,9 @@ body {
         display: none;
     }
 
+    .blueBody{
+        background:linear-gradient(#e0f7fa, #4fc3f7) !important;
+    }
     .showHalf {
         height: 1350vh;
         overflow: hidden;
