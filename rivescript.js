@@ -25,6 +25,8 @@ $(function () {
     var replyBot;
     var currentBot = "anabot";
 
+    //Respuestas personalizadas
+    var keywordObrasCard = "<div class='row'> <div class='col offset-m1 offset-s1 m11 s11'><a class='waves-effect waves-light btn keywordButton'>Que obras hay</a><a class='waves-effect waves-light btn keywordButton'>Comprar tickets</a><a class='waves-effect waves-light btn keywordButton'>Parque Lezama</a><a class='waves-effect waves-light btn keywordButton'>Proyectos</a><a class='waves-effect waves-light btn keywordButton'>Button</a></div></div><div class='row'><div class='col offset-m1 offset-s1 m11 s11'><a class='waves-effect waves-light btn keywordButton'>Button</a><a class='waves-effect waves-light btn keywordButton'>Button</a><a class='waves-effect waves-light btn keywordButton'>Button</a><a class='waves-effect waves-light btn keywordButton'>Button</a><a class='waves-effect waves-light btn keywordButton'>Button</a></div></div>'";
     function defaultSettings() {
         var creature;
         if (currentBot == "anabot") {
@@ -298,14 +300,30 @@ $(function () {
     }
 
     function appendBotRes() {
-        var rbCard = '<div class="botResCard" role="alert">' + replyBot + '</div>';
-        $("#chatBox").append(rbCard);
-
-
         // this is just so the robot's chat always scrolls down with any new messages
         var chatBox = $('#chatBox');
-        var height = chatBox[0].scrollHeight;
-        chatBox.scrollTop(height);
-        setTimeout(defaultSettings, 2000);
+        switch(replyBot) {
+            case "Obras:": console.log("eureka obras")
+            var specialKeywordCard = keywordObrasCard;
+              break;
+              case "Contacto:": console.log("eureka contacto");
+              break;
+              case "Inicio:": console.log("eureka inicio");
+              break;
+              case "Proyectos:": console.log("eureka proyectos");
+              break;
+
+
+          }
+          var rbCard = '<div class="botResCard" role="alert">' + replyBot + '</div>';
+          $("#chatBox").append(rbCard);
+          var height = chatBox[0].scrollHeight;
+          chatBox.scrollTop(height);
+
+          $("#chatBox").append(specialKeywordCard)
+          var height = chatBox[0].scrollHeight;
+          chatBox.scrollTop(height);
+
+          setTimeout(defaultSettings, 2000);
     }
 })

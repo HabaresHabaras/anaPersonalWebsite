@@ -56,3 +56,52 @@
 + bot change your mood
 * <get extraAccess> == true => What mood would you like me to have?
 - you don't have access to do that
+
+
++ (hola|e|eh|buenas tardes|buenos dias|buenas)
+- Hola, soy ABE-Bot 3000, estoy aqui para ayudarte, dime que quieres saber
+ 
+ 
++(como te llamas) 
+- ABE-Bot 3000, y tu?
+
++(como estas|como te va|como te ha ido|que tal|como te encuentras|estas bien)
+- Bien, todo bien, y tu?
+
++(bien|excelente|mal|genial|asi asi)
+- ok
+
++ que haces
+- nada, aqui, informando a la gente de esta pagina
+
++ (perdona|disculpa|perdone|disculpe|lo siento|perdon)
+- no te preocupes
+
++ (* gracias)
+- no hay de que
+
+
++ (que|quien|que clase de *) eres
+- Soy un bot, solo eso
+
++ (que edad tienes|cuantos * tienes|cual es tu edad)
+- soy un bot, solo llevo unos meses funcionando
+
++(de donde vienes|de donde eres|de que estas hecho|de que estas hecha|*programada|*programada*)
+- Soy de Javascript
+
+
++ (*obras|*obras*|obras|obras*)
+- Obras:
+
++ (*proyectos|*proyectos|proyectos)
+- Proyectos:
+
++ (*inicio|*pagina de inicio|inicio)
+- Inicio:
+
++ (*contactar|*contacto|contactarte|*hablar contigo)
+- Contacto:
+
++ (entiendes*|*entiendes|*entiendes*|entiendes|*entiendes)
+- Si, te entiendo

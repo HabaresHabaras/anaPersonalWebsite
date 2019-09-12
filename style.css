@@ -16,6 +16,10 @@ body {
     background: linear-gradient(#ffc4c4, #e0dddb);
 }
 
+.keywordButton{
+    margin-top:1vh;
+    margin-left:1vh;
+}
 .brand-logo {
     color: #cdedff !important;
 }
