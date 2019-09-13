@@ -151,6 +151,13 @@ body {
         padding-top:0;
         background-color: #c8e6c9;
     }
+
+    #mobile-demo{
+        background-color: #ffc4c4;
+    }
+    #mobile-demo li a{
+        color:white;
+    }
     .botResCard {
         font-size:15px;
         margin-top: .8vh;
