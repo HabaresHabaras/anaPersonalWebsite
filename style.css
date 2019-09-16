@@ -112,7 +112,9 @@ body {
     margin-right: 3vh;
     border-radius: 10px;
 }
-
+.spacedBtn{
+    margin-top:1vh;
+}
 .uiCard {
     background-color: #ff9800;
     font-size: 20px;

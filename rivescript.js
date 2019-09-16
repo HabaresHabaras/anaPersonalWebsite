@@ -268,7 +268,7 @@ $(function () {
         setTimeout(appendBotRes, 1500);
         var creature;
         if (currentBot == "anabot") {
-            creature = "anabotHablando";
+            creature = "anaBotHablando";
         } else if (currentBot == "octoLumino") {
             creature = "octoLuminoHablando";
         } else if (currentBot == "octoElectrico") {
