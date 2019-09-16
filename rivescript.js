@@ -30,7 +30,7 @@ $(function () {
     function defaultSettings() {
         var creature;
         if (currentBot == "anabot") {
-            creature = "anaBotHablando";
+            creature = "anabotIddle";
         } else if (currentBot == "octoLumino") {
             creature = "octoLuminoPunos";
         } else if (currentBot == "octoElectrico") {
@@ -268,7 +268,7 @@ $(function () {
         setTimeout(appendBotRes, 1500);
         var creature;
         if (currentBot == "anabot") {
-            creature = "anaBotHablando";
+            creature = "anabotHablando";
         } else if (currentBot == "octoLumino") {
             creature = "octoLuminoHablando";
         } else if (currentBot == "octoElectrico") {

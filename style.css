@@ -158,6 +158,9 @@ body {
     #mobile-demo li a{
         color:white;
     }
+    .spacedBtn{
+        margin-top:.7vh;
+    }
     .botResCard {
         font-size:15px;
         margin-top: .8vh;

@@ -105,3 +105,12 @@
 
 + (entiendes*|*entiendes|*entiendes*|entiendes|*entiendes)
 - Si, te entiendo
+
++(te quiero|*te quiero|*te quiero*)
+- Soy un robot, no entiendo de eso
+
++(gracias|*gracias|*gracias*|gracias*)
+- No hay de que
+
++(parque lezama|*parque lezama|*parque lezama*|parque lezama*)
+- Esto es todo lo que pude conseguir:
