@@ -65,7 +65,7 @@
 +(como te llamas) 
 - ABE-Bot 3000, y tu?
 
-+(como estas|como te va|como te ha ido|que tal|como te encuentras|estas bien)
++(como estas|*como estas|*como estas*|como estas*|como te va|como te ha ido|que tal|como te encuentras|estas bien)
 - Bien, todo bien, y tu?
 
 +(bien|excelente|mal|genial|asi asi)
